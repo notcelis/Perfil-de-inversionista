@@ -11,9 +11,12 @@ function tabulateAnswers() {
     for (i=0; i<choices.length; i++) {
       // if the radio is checked..
       if (choices[i].checked) {
+        if(!isNaN(parseInt(choices[i].value))){
+          total += parseInt(choices[i].value);
+          console.log(total);
+        }
         // add 1 to that choice's score
-        total += parseInt(choices[i].value);
-        console.log(total);
+        
         if(choices[i].name && choices[i].name == "q12")
           sofisticado = 1;
         // If you add more choices and outcomes, you must add another if statement below.
