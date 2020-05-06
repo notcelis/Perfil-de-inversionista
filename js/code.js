@@ -2,9 +2,6 @@
 function tabulateAnswers() {
     // initialize variables for each choice's score
     // If you add more choices and outcomes, you must add another variable here.
-    var ascore = 0;
-    var bscore = 0;
-    var cscore = 0;
     var sofisticado = 0;
     var total = 0;
     // get a list of the radio inputs on the page
@@ -31,17 +28,17 @@ function tabulateAnswers() {
     var answerbox = document.getElementById('answer');
     
     if (sofisticado ==1) { // If user chooses the fourth choice the most, this outcome will be displayed.
-      answerbox.innerHTML = "SOFISTICADO";
+      answerbox.innerHTML = "SOFISTICADO:  Busca obtener una elevada rentabilidad tomando posiciones de mayor riesgo. Es conocedor del mercado y los riesgos inherentes al mismo. Se hace responsable de sus propias inversiones.";
     }
     else{
       if (total <= 14) { // If user chooses the first choice the most, this outcome will be displayed.
-        answerbox.innerHTML = "ADVERSO AL RIESGO.";
+        answerbox.innerHTML = "ADVERSO AL RIESGO: Prefiere una menor exposición al riesgo, esto podría significar una menor rentabilidad y una myor probabilidad de preservar el capital.";
       }
       if (total >=15 && total <=28) { // If user chooses the second choice the most, this outcome will be displayed.
-        answerbox.innerHTML = "MODERADO";
+        answerbox.innerHTML = "MODERADO: Está dispuesto a invertir parte de su capital en títulas con cierta exposición al riesgo, esperando una mayor rentabilidad.";
       }
       if (total >29 && total <=64) { // If user chooses the third choice the most, this outcome will be displayed.
-        answerbox.innerHTML = "PROPENSO AL RIESGO";
+        answerbox.innerHTML = "PROPENSO AL RIESGO: Asume una fuerte exposición al riesgo, apostando a obtener una elevada rentabilidad.";
       }
     }
     // If you add more choices, you must add another response below.
@@ -51,4 +48,6 @@ function tabulateAnswers() {
   function resetAnswer() {
     var answerbox = document.getElementById('answer');
     answerbox.innerHTML = "Your result will show up here!";
+    location.reload();
+    return false;
   }
