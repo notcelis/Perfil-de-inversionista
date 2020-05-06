@@ -4,53 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riesgo del inversionista</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js"></script>
 </head>
 <body>
-    <h3>1.¿Cuál es el objetivo fundamental de su inversión?</h3>
+    
+        <div id="wrapper">
+        <h1>Perfil de riesgo del inversionista</h1>
+        <h3>1.¿Cuál es el objetivo fundamental de su inversión?</h3>
         <p>
-            <input type="checkbox">a)Invertir en valores que son fácilmente convertibles en efectivo(Liquidez)
+            <input type="checkbox" value="1">a)Invertir en valores que son fácilmente convertibles en efectivo(Liquidez)
         </p>
         <p>
-            <input type="checkbox">b)Tratar de generar una renta periódica de la inversiñon en forma de interes y/o dividendos(Ingreso)
+            <input type="checkbox" value="2">b)Tratar de generar una renta periódica de la inversiñon en forma de interes y/o dividendos(Ingreso)
         </p>
         <p>
-            <input type="checkbox">c)El objetivo de las inversiones es lograr un crecimiento a largo plazo del capital a trabes de la reinversión de los rendimientos en el principal (crecimiento)
+            <input type="checkbox" value="3">c)El objetivo de las inversiones es lograr un crecimiento a largo plazo del capital a trabes de la reinversión de los rendimientos en el principal (crecimiento)
         </p>
         <p>
-            <input type="checkbox">d)Se busca realizar inversiones con el objetivo de obtener mayores rentabilidades a cambio de mayores niveles a la exposición al riego (Especulativo)
+            <input type="checkbox" value="4">d)Se busca realizar inversiones con el objetivo de obtener mayores rentabilidades a cambio de mayores niveles a la exposición al riego (Especulativo)
         </p>
         <br>
     <h3>2.¿En qué rango de edad se encuentra?</h3>
         <p>
-            <input type="checkbox">a)Menor de 25 años
+            <input type="checkbox" value="4">a)Menor de 25 años
         </p>
         <p>
-            <input type="checkbox">b)Entre 25 - 40 años
+            <input type="checkbox" value="3">b)Entre 25 - 40 años
         </p>
         <p>
-            <input type="checkbox">c)Entre 40 - 60 años
+            <input type="checkbox" value="2">c)Entre 40 - 60 años
         </p>
         <p>
-            <input type="checkbox">d)Más de 60 años
+            <input type="checkbox" value="4">d)Más de 60 años
         </p>
         <br>
     <h3>3.¿Has tenido experiencia invirtiendo?</h3>
         <p>
-            <input type="checkbox">a)Sí
+            <input type="checkbox" value="2">a)Sí
         </p>
         <p>
-            <input type="checkbox">b)No
+            <input type="checkbox" value="1">b)No
         </p>
         <br>
     <h3>4.En términos de tiempo,¿cuál es su horizonte de inversión?</h3>
         <p>
-            <input type="checkbox">a)Menos de 1 año
+            <input type="checkbox" value="1">a)Menos de 1 año
         </p>
         <p>
-            <input type="checkbox">b)Entre 1 y 3 años
+            <input type="checkbox" value="2">b)Entre 1 y 3 años
         </p>
         <p>
-            <input type="checkbox">c)Más de 3 años
+            <input type="checkbox" value="3">c)Más de 3 años
         </p>
         <br>
     <table border="1" style=”width: 100%”>
@@ -78,7 +83,7 @@
                 <th>Porcentaje</th>
             </tr>
         </thead>
-        
+
         <tbody>
             <tr>
                 <th>Intrumentos de deuda(Bonos de deuda emitios por empresas comerciales o por entidades gubernamentales. Ejemplo: Cetes)</th>
@@ -180,7 +185,7 @@
                 <th>Porcentaje</th>
             </tr>
         </thead>
-        
+
         <tbody>
             <tr>
                 <th>Intrumentos de deuda(Bonos de deuda emitios por empresas comerciales o por entidades gubernamentales. Ejemplo: Bonos del tesoro,eurobonos)</th>
@@ -248,114 +253,121 @@
     </table>
     <h3>6.¿Utiliza medios propios para evaluar y dar seguimiento a instrumentos financieros y a mercados bursátiles?</h3>
         <p>
-            <input type="checkbox">a)Sí (Cuáles: <input type="text">)
+            <input type="checkbox" value="2">a)Sí (Cuáles: <input type="text">)
         </p>
         <p>
-            <input type="checkbox">b)No
+            <input type="checkbox" value="'1'">b)No
         </p>
         <br>
     <h3>7.A la hora de tomar una decisión de inversión, ¿cuál de los seguientes factores inciden más sobre ésta?</h3>
         <p>
-            <input type="checkbox">a)Análisis elaborados personalmente sobre el instrumento financiero
+            <input type="checkbox" value="2">a)Análisis elaborados personalmente sobre el instrumento financiero
         </p>
         <p>
-            <input type="checkbox">b)Información técnica suministrada por su Casa de Bolsa
+            <input type="checkbox" value="1">b)Información técnica suministrada por su Casa de Bolsa
         </p>
         <p>
-            <input type="checkbox">c)Experiencias anteriores
+            <input type="checkbox" value="3">c)Experiencias anteriores
         </p>
         <p>
-            <input type="checkbox">d)Otras:<input type="text">
+            <input type="checkbox" value="4">d)Otras:<input type="text">
         </p>
         <br>
     <h3>8.En el caso de altas fluctuaciones de precios de sus inversiones en un periodo determinado, las cuales le exponen a pérdidas de capital, ¿qué decisión tomaría?</h3>
         <p>
-            <input type="checkbox">a)No me siento comodo con las fluctuaciones
+            <input type="checkbox" value="1">a)No me siento comodo con las fluctuaciones
         </p>
         <p>
-            <input type="checkbox">b)Liquidar inmediatamente las posiciones ante tales fluctuaciones
+            <input type="checkbox" value="2">b)Liquidar inmediatamente las posiciones ante tales fluctuaciones
         </p>
         <p>
-            <input type="checkbox">c)Esperaría un tiempo prudente para analizar la tendencia del mercado
+            <input type="checkbox" value="3">c)Esperaría un tiempo prudente para analizar la tendencia del mercado
         </p>
         <p>
-            <input type="checkbox">d)Mantendria las posiciones esperando una recuperación en el mercado o largo plazo
+            <input type="checkbox" value="4">d)Mantendria las posiciones esperando una recuperación en el mercado o largo plazo
         </p>
         <br>
     <h3>9.Si el valor de sus inversiones cae,¿a partir de qué monto tomaría medidas extremas?</h3>
         <p>
-            <input type="checkbox">a)-5%
+            <input type="checkbox" value="1">a)-5%
         </p>
         <p>
-            <input type="checkbox">b)-10%
+            <input type="checkbox" value="2">b)-10%
         </p>
         <p>
-            <input type="checkbox">c)-20%
+            <input type="checkbox" value="3">c)-20%
         </p>
         <p>
-            <input type="checkbox">d)No me inquiero
+            <input type="checkbox" value="4">d)No me inquiero
         </p>
         <br>
     <h3>10.¿Cuál de las siguientes afirmaciones se ajusta más a sus preferencias?</h3>
         <p>
-            <input type="checkbox">a)Mis inversiones debes er lo más seguras aunque eso imprique que los rendimientos sean bajos
+            <input type="checkbox" value="1">a)Mis inversiones debes er lo más seguras aunque eso imprique que los rendimientos sean bajos
         </p>
         <p>
-            <input type="checkbox">b)Me interesan rendimientos competitivos manteniendo una adecuada seguridad pero sabiendo que estoy expuesto a riesgos de pérdidas ocasionales
+            <input type="checkbox" value="2">b)Me interesan rendimientos competitivos manteniendo una adecuada seguridad pero sabiendo que estoy expuesto a riesgos de pérdidas ocasionales
         </p>
         <p>
-            <input type="checkbox">c)Busco rendimientios superiores a los del mercado y estoy dispuesto a aceptar un riesgo moderado para obtener estos rendimientos
+            <input type="checkbox" value="3">c)Busco rendimientios superiores a los del mercado y estoy dispuesto a aceptar un riesgo moderado para obtener estos rendimientos
         </p>
         <p>
-            <input type="checkbox">d)Espero altos rendimientios en el largo plazo, aunqueello signifique aceptar fluctuaciones en los resultados de corto plazo y asumir mayores niveles de riesgo
+            <input type="checkbox" value="4">d)Espero altos rendimientios en el largo plazo, aunqueello signifique aceptar fluctuaciones en los resultados de corto plazo y asumir mayores niveles de riesgo
         </p>
         <br>
     <h3>11.Defina su moneda de preferencia para realizar inversiones(puede marcar más de una opción)</h3>
         <p>
-            <input type="checkbox">a)Pesos
+            <input type="checkbox" value="1">a)Pesos
         </p>
         <p>
-            <input type="checkbox">b)Dólares
+            <input type="checkbox" value="2">b)Dólares
         </p>
         <p>
-            <input type="checkbox">c)Euros
+            <input type="checkbox" value="3">c)Euros
         </p>
         <p>
-            <input type="checkbox">d)Otra<input type="text">
+            <input type="checkbox" value="4">d)Otra<input type="text">
         </p>
         <br>
         <p>
-            <input type="checkbox">e)No tengo preferencia por una moneda en particular
+            <input type="checkbox" value="4">e)No tengo preferencia por una moneda en particular
         </p>
     <h3>12.De acuerdo a la definición anterior ¿se considera como un inversionista sofisticado?</h3>
         <p>
-            <input type="checkbox">a)Sí
+            <input type="checkbox" name="q12" value="2">a)Sí
         </p>
         <p>
-            <input type="checkbox">b)No
+            <input type="checkbox" value="1">b)No
         </p>
         <br>
     <h3>13.¿Cuenta con portafolios de inversion en otras instituciones financieras?</h3>
         <p>
-            <input type="checkbox">a)Sí
+            <input type="checkbox" value="2">a)Sí
         </p>
         <p>
-            <input type="checkbox">b)No
+            <input type="checkbox" value="1">b)No
         </p>
         <br>
     <h3>14.¿Cuenta con inversiones de naturaleza no financiera(negocios, bienes raíces,etc)?</h3>
         <p>
-            <input type="checkbox">a)Sí en:
-            <input type="checkbox">Tecnología(software, equipos)
-            <input type="checkbox">Inversión agrícola (semillas,cultivos,maquinaria,etc)
-            <input type="checkbox">Inversión en comercio
-            <input type="checkbox">Inversión en infraestructura
-            <input type="checkbox">Inversión en inmobiliaria
-            <input type="checkbox">Otras:<input type="text">
+            <input type="checkbox" value="2">a)Sí en:
+            <p>
+                <input type="checkbox">Tecnología(software, equipos)
+                <input type="checkbox">Inversión agrícola (semillas,cultivos,maquinaria,etc)
+                <input type="checkbox">Inversión en comercio
+                <input type="checkbox">Inversión en infraestructura
+                <input type="checkbox">Inversión en inmobiliaria
+                <input type="checkbox">Otras:<input type="text">
+            </p>
+            
         </p>
         <p>
-            <input type="checkbox">b)No</p>
+            <input type="checkbox" value="1">b)No</p>
             <br>
+            <button type="submit" id="submit" onclick="tabulateAnswers()">Enviar datos</button>
+            <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+            </form>
+        <div id="answer">Tus resultados se mostraran aqui!</div>
     <h3>15.¿Está usted de acuerdo con el perdil asignado?</h3>
         <p>
             <input type="checkbox">a)Sí(Fin de cuestionario)
@@ -376,8 +388,8 @@
         </p>
         <br>
         <p>
-            <input type="button" value="Calcular">
-            <input type="button" value="Limpiar">
+            <input type="button" value="Finalizar">
         </p>
+      </div>
 </body>
 </html>
